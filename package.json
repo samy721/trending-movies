@@ -1,6 +1,6 @@
 {
   "name": "trending-movies",
-  "homepage": "https://shekharmouryaa.github.io/movies",
+  "homepage": "https://shekharmouryaa.github.io/trending-movies",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
