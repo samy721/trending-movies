@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-        <Route path="/" exact render={(props)=> (
+        <Route path="/trending-movies" exact render={(props)=> (
         <>
         <Banner {...props}/>
         <Movies {...props}/> 
@@ -21,9 +21,6 @@ function App() {
         <Route path="/watchlist" component={Watchlist} />
         </Switch>
         {/* 
-        <Banner />
-        <Movies /> 
-        <Watchlist />*/}
       </Router>
   </>
 );
