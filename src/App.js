@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/navbar';
 import Banner from './components/banner';
 import Movies from './components/movies';
-import Watchlist from './components/watchlist';
+import favouritelist from './components/favouritelist';
 import { BrowserRouter as Router, Switch, Route, BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -18,9 +18,8 @@ function App() {
         <Movies {...props}/> 
         </>
         )}/>
-        <Route path="/watchlist" component={Watchlist} />
+        <Route path="/favouritelist" component={favouritelist} />
         </Switch>
-        {/* 
       </Router>
   </>
 );
