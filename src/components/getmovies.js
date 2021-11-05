@@ -1,441 +1,401 @@
-export const movies = 
-{
-    "page": 1,
-    "results": [
-      {
-        "overview": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
-        "release_date": "2021-09-15",
-        "title": "Dune",
-        "adult": false,
-        "backdrop_path": "/aknvFyJUQQoZFtmFnYzKi4vGv4J.jpg",
-        "genre_ids": [
-          28,
-          12,
-          18,
-          878
-        ],
-        "vote_count": 1559,
-        "original_language": "en",
-        "original_title": "Dune",
-        "poster_path": "/lr3cYNDlJcpT1EWzFH42aSIvkab.jpg",
-        "id": 438631,
-        "video": false,
-        "vote_average": 8.1,
-        "popularity": 516.924,
-        "media_type": "movie"
-      },
-
-      {
-        "original_language": "ko",
-        "id": 93405,
-        "first_air_date": "2021-09-17",
-        "vote_count": 7510,
-        "overview": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games—with high stakes. But, a tempting prize awaits the victor.",
-        "vote_average": 7.9,
-        "original_name": "오징어 게임",
-        "origin_country": [
-          "KR"
-        ],
-        "poster_path": "/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg",
-        "backdrop_path": "/n00M5kO1C9xBkusfe56Zvrihw6c.jpg",
-        "original_title": "Squid Game",
-        "genre_ids": [
-          10759,
-          9648,
-          18
-        ],
-        "popularity": 6805.409,
-        "media_type": "tv"
-      },
-
-
-
-      {
-        "backdrop_path": "/kIG81E0H4CxuYIRgyNyD0z3KSlM.jpg",
-        "genre_ids": [
-          27,
-          53
-        ],
-        "original_language": "en",
-        "original_title": "Halloween Kills",
-        "poster_path": "/ir9eyz1mtgsohjvo7UYtqUfFuES.jpg",
-        "id": 610253,
-        "video": false,
-        "vote_average": 7.7,
-        "overview": "Minutes after Laurie Strode, her daughter Karen and granddaughter Allyson left masked monster Michael Myers caged and burning in Laurie's basement, Laurie is rushed to the hospital with life-threatening injuries, believing she finally killed her lifelong tormentor. But when Michael manages to free himself from Laurie's trap, his ritual bloodbath resumes. As Laurie fights her pain and prepares to defend herself against him, she inspires all of Haddonfield to rise up against their unstoppable monster. The Strode women join a group of other survivors of Michael's first rampage who decide to take matters into their own hands, forming a vigilante mob that sets out to hunt Michael down, once and for all.",
-        "release_date": "2021-10-14",
-        "vote_count": 211,
-        "title": "Halloween Kills",
-        "adult": false,
-        "popularity": 961.006,
-        "media_type": "movie"
-      },
-
-
-
-
-
-
-
-      {
-        "id": 110356,
-        "overview": "Following her father's murder, a revenge-driven woman puts her trust in a powerful crime boss — and enters the police force under his direction.",
-        "original_name": "마이 네임",
-        "origin_country": [
-          "KR"
-        ],
-        "backdrop_path": "/yjsXtps0rw36UB8TomSjI4y4zvR.jpg",
-        "genre_ids": [
-          80,
-          18,
-          9648,
-          10759
-        ],
-        "vote_count": 17,
-        "first_air_date": "2021-10-14",
-        "vote_average": 9,
-        "original_title": "My Name",
-        "poster_path": "/gHozOomiA24DvlgNfjkYCB5NBiO.jpg",
-        "original_language": "ko",
-        "popularity": 84.325,
-        "media_type": "tv"
-      },
-      {
-        "release_date": "2021-09-30",
-        "adult": false,
-        "backdrop_path": "/70nxSw3mFBsGmtkvcs91PbjerwD.jpg",
-        "genre_ids": [
-          878,
-          28
-        ],
-        "id": 580489,
-        "original_language": "en",
-        "original_title": "Venom: Let There Be Carnage",
-        "poster_path": "/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg",
-        "vote_count": 682,
-        "video": false,
-        "vote_average": 7.1,
-        "title": "Venom: Let There Be Carnage",
-        "overview": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
-        "popularity": 10175.435,
-        "media_type": "movie"
-      },
-      {
-        "backdrop_path": "/pG4hoMaHaiAFRMDKsKbBbWTyAma.jpg",
-        "original_name": "You",
-        "origin_country": [
-          "US"
-        ],
-        "original_language": "en",
-        "vote_count": 1345,
-        "poster_path": "/yxIdKGEjagaLs5kMjw92kAHmopH.jpg",
-        "genre_ids": [
-          9648,
-          80,
-          18
-        ],
-        "first_air_date": "2018-09-09",
-        "vote_average": 8.1,
-        "id": 78191,
-        "overview": "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
-        "original_title": "You",
-        "popularity": 624.259,
-        "media_type": "tv"
-      },
-      {
-        "adult": false,
-        "backdrop_path": "/8h2Ok2eo4YrQLoDfsOZF3TM7aJp.jpg",
-        "genre_ids": [
-          10752,
-          36,
-          18
-        ],
-        "id": 633515,
-        "original_language": "nl",
-        "original_title": "De Slag om de Schelde",
-        "overview": "November 1944. On the flooded isle of Walcheren, Zeeland, thousands of Allied soldiers are battling the German army. Three young lives become inextricably connected. A Dutch boy fighting for the Germans, an English glider pilot and a girl from Zeeland connected to the resistance against her will, are forced to make crucial choices that impact both their own freedom and the freedom of others.",
-        "poster_path": "/39MVquMq8CFKm51aNGmSOwCw6B7.jpg",
-        "release_date": "2020-12-14",
-        "title": "The Forgotten Battle",
-        "video": false,
-        "vote_average": 7.3,
-        "vote_count": 22,
-        "popularity": 19.167,
-        "media_type": "movie"
-      },
-      {
-        "genre_ids": [
-          28,
-          53,
-          80
-        ],
-        "original_language": "en",
-        "original_title": "Copshop",
-        "poster_path": "/szArp3dQlVajpsqpyPFVAFHFsa3.jpg",
-        "video": false,
-        "vote_average": 6.2,
-        "title": "Copshop",
-        "overview": "On the run from a lethal assassin, a wily con artist devises a scheme to hide out inside a small-town police station. However, when the hit man turns up at the precinct, an unsuspecting rookie cop finds herself caught in the crosshairs.",
-        "release_date": "2021-09-09",
-        "vote_count": 26,
-        "id": 738652,
-        "adult": false,
-        "backdrop_path": "/q8iOIJLvIcz5x38RrLudHQI5644.jpg",
-        "popularity": 31.856,
-        "media_type": "movie"
-      },
-      {
-        "overview": "A bank teller called Guy realizes he is a background character in an open world video game called Free City that will soon go offline.",
-        "release_date": "2021-08-11",
-        "adult": false,
-        "backdrop_path": "/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg",
-        "vote_count": 2738,
-        "genre_ids": [
-          35,
-          28,
-          12,
-          878
-        ],
-        "vote_average": 7.8,
-        "original_language": "en",
-        "original_title": "Free Guy",
-        "poster_path": "/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg",
-        "title": "Free Guy",
-        "video": false,
-        "id": 550988,
-        "popularity": 4882.375,
-        "media_type": "movie"
-      },
-      {
-        "title": "The Trip",
-        "vote_average": 7.3,
-        "overview": "A dysfunctional couple head to a remote lakeside cabin under the guise of reconnecting, but each has secret designs to kill the other. Before they can carry out their respective plans, unexpected visitors arrive and the couple is faced with a greater danger than anything they could have plotted.",
-        "release_date": "2021-07-30",
-        "id": 760747,
-        "adult": false,
-        "backdrop_path": "/1yJ8wBmWyEM24UFUSDaRHJFMPPL.jpg",
-        "vote_count": 12,
-        "genre_ids": [
-          28,
-          35,
-          53
-        ],
-        "video": false,
-        "original_language": "no",
-        "original_title": "I onde dager",
-        "poster_path": "/1Wxgaa45NyvPwYZT3GsZqQWWanR.jpg",
-        "popularity": 8.252,
-        "media_type": "movie"
-      },
-      {
-        "vote_average": 8.4,
-        "overview": "In a sun-soaked Hawaiian town with a mysterious past, a group of friends is left with a dark secret after a tragic accident. One year later, a member of the group receives a threatening message, and the friends now know that someone intends to make them pay for last summer.",
-        "id": 129680,
-        "backdrop_path": "/cENiQ3AJIHjpPsE9dW8KDmvldTK.jpg",
-        "vote_count": 15,
-        "genre_ids": [
-          18
-        ],
-        "first_air_date": "2021-10-14",
-        "original_name": "I Know What You Did Last Summer",
-        "origin_country": [
-          "US"
-        ],
-        "poster_path": "/udvw5tHwEu8VI7e07qpVLZAw8o2.jpg",
-        "original_language": "en",
-        "original_title": "I Know What You Did Last Summer",
-        "popularity": 58.345,
-        "media_type": "tv"
-      },
-      {
-        "genre_ids": [
-          35,
-          10749,
-          18
-        ],
-        "original_language": "de",
-        "original_title": "Du Sie Er & Wir",
-        "poster_path": "/tsrJNOy7NaoA4wHtA2M90WXAiVe.jpg",
-        "id": 874965,
-        "video": false,
-        "vote_average": 5.8,
-        "overview": "After their partner swap experiment takes a turn, four friends arrive at a remote beach hut to face the fallout and purge themselves of deeper truths.",
-        "release_date": "2021-10-15",
-        "vote_count": 5,
-        "title": "The Four of Us",
-        "adult": false,
-        "backdrop_path": "/tePPgPujOgf2h6N0eo8OG188baY.jpg",
-        "popularity": 50.015,
-        "media_type": "movie"
-      },
-      {
-        "release_date": "2021-07-28",
-        "adult": false,
-        "backdrop_path": "/jlGmlFOcfo8n5tURmhC7YVd4Iyy.jpg",
-        "genre_ids": [
-          28,
-          12,
-          14
-        ],
-        "id": 436969,
-        "original_language": "en",
-        "original_title": "The Suicide Squad",
-        "poster_path": "/kb4s0ML0iVZlG6wAKbbs9NAm6X.jpg",
-        "vote_count": 4395,
-        "video": false,
-        "vote_average": 7.8,
-        "title": "The Suicide Squad",
-        "overview": "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
-        "popularity": 1325.984,
-        "media_type": "movie"
-      },
-      {
-        "genre_ids": [
-          878,
-          53,
-          18
-        ],
-        "original_language": "en",
-        "original_title": "Warning",
-        "poster_path": "/elaQvcOaor2leCCrI5PH6hyps9o.jpg",
-        "id": 583081,
-        "video": false,
-        "vote_average": 0,
-        "overview": "Loneliness, death and the meaning of life, explored through vastly separate lives colliding in interweaving short stories set in future Earth.",
-        "release_date": "2021-10-22",
-        "vote_count": 0,
-        "title": "Warning",
-        "adult": false,
-        "backdrop_path": "/giQ3iFmDzKD3bDtqYO1xv1rNZZK.jpg",
-        "popularity": 20.961,
-        "media_type": "movie"
-      },
-      {
-        "vote_average": 8.4,
-        "overview": "After a vintage Chucky doll turns up at a suburban yard sale, an idyllic American town is thrown into chaos as a series of horrifying murders begin to expose the town’s hypocrisies and secrets. Meanwhile, the arrival of enemies — and allies — from Chucky’s past threatens to expose the truth behind the killings, as well as the demon doll’s untold origins.",
-        "id": 90462,
-        "vote_count": 282,
-        "poster_path": "/iF8ai2QLNiHV4anwY1TuSGZXqfN.jpg",
-        "backdrop_path": "/xAKMj134XHQVNHLC6rWsccLMenG.jpg",
-        "genre_ids": [
-          9648,
-          18
-        ],
-        "first_air_date": "2021-10-12",
-        "original_name": "Chucky",
-        "original_language": "en",
-        "origin_country": [
-          "US"
-        ],
-        "original_title": "Chucky",
-        "popularity": 759.599,
-        "media_type": "tv"
-      },
-      {
-        "id": 452019,
-        "overview": "A devoted husband will stop at nothing to save his marriage when it's destroyed by a time-traveling rival.",
-        "release_date": "2021-10-15",
-        "adult": false,
-        "backdrop_path": "/fxxznsDyYQE6Iugpb5VqM0SjxVF.jpg",
-        "vote_count": 5,
-        "genre_ids": [
-          878,
-          10749
-        ],
-        "vote_average": 6.4,
-        "original_language": "en",
-        "original_title": "Needle in a Timestack",
-        "poster_path": "/rjGYOszxlaUAe6EC5yZ4Q8l3aVL.jpg",
-        "title": "Needle in a Timestack",
-        "video": false,
-        "popularity": 69.875,
-        "media_type": "movie"
-      },
-      {
-        "adult": false,
-        "backdrop_path": "/4ke48uabb0K6uDcLlSED2ZvvYEb.jpg",
-        "genre_ids": [
-          28,
-          80,
-          18
-        ],
-        "vote_count": 0,
-        "original_language": "en",
-        "original_title": "The Batman",
-        "poster_path": "/7YncShtIGNJP5euTPSZGxGsImaN.jpg",
-        "vote_average": 0,
-        "video": false,
-        "title": "The Batman",
-        "id": 414906,
-        "overview": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
-        "release_date": "2022-03-03",
-        "popularity": 78.897,
-        "media_type": "movie"
-      },
-      {
-        "backdrop_path": "/oKxrDdG0SfmWRtJYmreK4rjDMUo.jpg",
-        "vote_count": 1276,
-        "genre_ids": [
-          18,
-          10765,
-          10759
-        ],
-        "id": 80752,
-        "original_language": "en",
-        "original_name": "See",
-        "origin_country": [
-          "US"
-        ],
-        "original_title": "See",
-        "poster_path": "/A6dnHWe8YYcoFBHzP7T6WPP4b6F.jpg",
-        "vote_average": 8.3,
-        "overview": "A virus has decimated humankind. Those who survived emerged blind. Centuries later when twins are born with the mythic ability to see, their father must protect his tribe against a threatened queen.",
-        "first_air_date": "2019-11-01",
-        "popularity": 633.761,
-        "media_type": "tv"
-      },
-      {
-        "backdrop_path": "/aO9Nnv9GdwiPdkNO79TISlQ5bbG.jpg",
-        "genre_ids": [
-          28,
-          12
-        ],
-        "original_language": "en",
-        "original_title": "Snake Eyes: G.I. Joe Origins",
-        "poster_path": "/uIXF0sQGXOxQhbaEaKOi2VYlIL0.jpg",
-        "id": 568620,
-        "video": false,
-        "vote_average": 6.9,
-        "overview": "After saving the life of their heir apparent, tenacious loner Snake Eyes is welcomed into an ancient Japanese clan called the Arashikage where he is taught the ways of the ninja warrior. But, when secrets from his past are revealed, Snake Eyes' honor and allegiance will be tested – even if that means losing the trust of those closest to him.",
-        "release_date": "2021-07-22",
-        "vote_count": 657,
-        "title": "Snake Eyes: G.I. Joe Origins",
-        "adult": false,
-        "popularity": 2594.292,
-        "media_type": "movie"
-      },
-      {
-        "title": "No Time to Die",
-        "vote_average": 7.3,
-        "overview": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
-        "release_date": "2021-09-29",
-        "id": 370172,
-        "adult": false,
-        "backdrop_path": "/u5Fp9GBy9W8fqkuGfLBuuoJf57Z.jpg",
-        "vote_count": 740,
-        "genre_ids": [
-          12,
-          28,
-          53
-        ],
-        "video": false,
-        "original_language": "en",
-        "original_title": "No Time to Die",
-        "poster_path": "/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
-        "popularity": 636.765,
-        "media_type": "movie"
-      }
-    ],
-    "total_pages": 1000,
-    "total_results": 20000
-  }
+export const movies = {
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/lNyLSOKMMeUPr1RsL4KcRuIXwHt.jpg",
+      "genre_ids": [
+        878,
+        28
+      ],
+      "id": 580489,
+      "original_language": "en",
+      "original_title": "Venom: Let There Be Carnage",
+      "overview": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
+      "popularity": 7158.512,
+      "poster_path": "/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg",
+      "release_date": "2021-09-30",
+      "title": "Venom: Let There Be Carnage",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 990
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/eeijXm3553xvuFbkPFkDG6CLCbQ.jpg",
+      "genre_ids": [
+        28,
+        12,
+        18,
+        878
+      ],
+      "id": 438631,
+      "original_language": "en",
+      "original_title": "Dune",
+      "overview": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence-a commodity capable of unlocking humanity's greatest potential-only those who can conquer their fear will survive.",
+      "popularity": 3892.202,
+      "poster_path": "/8hoD5BQuUV9dDecAbiyVIxLjzZ9.jpg",
+      "release_date": "2021-09-15",
+      "title": "Dune",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 1980
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/2cdrhlf3hvvueGyQDx0u8jpWvQR.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 610253,
+      "original_language": "en",
+      "original_title": "Halloween Kills",
+      "overview": "Minutes after Laurie Strode, her daughter Karen and granddaughter Allyson left masked monster Michael Myers caged and burning in Laurie's basement, Laurie is rushed to the hospital with life-threatening injuries, believing she finally killed her lifelong tormentor. But when Michael manages to free himself from Laurie's trap, his ritual bloodbath resumes. As Laurie fights her pain and prepares to defend herself against him, she inspires all of Haddonfield to rise up against their unstoppable monster. The Strode women join a group of other survivors of Michael's first rampage who decide to take matters into their own hands, forming a vigilante mob that sets out to hunt Michael down, once and for all.",
+      "popularity": 3654.224,
+      "poster_path": "/qmJGd5IfURq8iPQ9KF3les47vFS.jpg",
+      "release_date": "2021-10-14",
+      "title": "Halloween Kills",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 591
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg",
+      "genre_ids": [
+        35,
+        28,
+        12,
+        878
+      ],
+      "id": 550988,
+      "original_language": "en",
+      "original_title": "Free Guy",
+      "overview": "A bank teller called Guy realizes he is a background character in an open world video game called Free City that will soon go offline.",
+      "popularity": 3300.333,
+      "poster_path": "/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg",
+      "release_date": "2021-08-11",
+      "title": "Free Guy",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 3009
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
+      "genre_ids": [
+        878,
+        28
+      ],
+      "id": 335983,
+      "original_language": "en",
+      "original_title": "Venom",
+      "overview": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.",
+      "popularity": 2083.036,
+      "poster_path": "/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
+      "release_date": "2018-09-28",
+      "title": "Venom",
+      "video": false,
+      "vote_average": 6.8,
+      "vote_count": 11902
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kTOheVmqSBDIRGrQLv2SiSc89os.jpg",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "id": 639721,
+      "original_language": "en",
+      "original_title": "The Addams Family 2",
+      "overview": "The Addams get tangled up in more wacky adventures and find themselves involved in hilarious run-ins with all sorts of unsuspecting characters.",
+      "popularity": 1857.53,
+      "poster_path": "/xYLBgw7dHyEqmcrSk2Sq3asuSq5.jpg",
+      "release_date": "2021-10-01",
+      "title": "The Addams Family 2",
+      "video": false,
+      "vote_average": 7.6,
+      "vote_count": 368
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5UmoOvOmnCHiJj3TAKVn7uNAKAW.jpg",
+      "genre_ids": [
+        28,
+        35,
+        12
+      ],
+      "id": 772436,
+      "original_language": "es",
+      "original_title": "Matando Cabos 2: La Máscara del Máscara",
+      "overview": "Faced with the unexpected death of his estranged father -El Máscara- and the subsequent theft of his precious mask, Rubén -Mascarita- will find himself confronted with his past. Alongside his invincible bodyguard Tony \"The Cannibal\" and, an unexpected ally, he will have only one day to recover it and make amends with the memory of his father.",
+      "popularity": 1583.895,
+      "poster_path": "/jxdKa1467pktAILLbfw6kZyQlbW.jpg",
+      "release_date": "2021-10-01",
+      "title": "Matando Cabos 2: La Máscara del Máscara",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 44
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/aO9Nnv9GdwiPdkNO79TISlQ5bbG.jpg",
+      "genre_ids": [
+        28,
+        12
+      ],
+      "id": 568620,
+      "original_language": "en",
+      "original_title": "Snake Eyes: G.I. Joe Origins",
+      "overview": "After saving the life of their heir apparent, tenacious loner Snake Eyes is welcomed into an ancient Japanese clan called the Arashikage where he is taught the ways of the ninja warrior. But, when secrets from his past are revealed, Snake Eyes' honor and allegiance will be tested – even if that means losing the trust of those closest to him.",
+      "popularity": 1811.492,
+      "poster_path": "/uIXF0sQGXOxQhbaEaKOi2VYlIL0.jpg",
+      "release_date": "2021-07-22",
+      "title": "Snake Eyes: G.I. Joe Origins",
+      "video": false,
+      "vote_average": 6.9,
+      "vote_count": 706
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ux6gkGSKNFtp2NFYxwYFxVWdnGa.jpg",
+      "genre_ids": [
+        80,
+        18,
+        53
+      ],
+      "id": 874948,
+      "original_language": "tr",
+      "original_title": "Kin",
+      "overview": "Ahead of a promotion, a police chief becomes entangled in a deadly incident and uncovers an intrigue fueled by grudge that threatens his colleagues.",
+      "popularity": 1360.632,
+      "poster_path": "/xSqtHT2DWbWBZ4dUvvMs6z1OfFK.jpg",
+      "release_date": "2021-10-08",
+      "title": "Grudge",
+      "video": false,
+      "vote_average": 6.7,
+      "vote_count": 23
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/owraiceOKtSOa3t8sp3wA9K2Ox6.jpg",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        878
+      ],
+      "id": 703771,
+      "original_language": "en",
+      "original_title": "Deathstroke: Knights & Dragons - The Movie",
+      "overview": "The assassin Deathstroke tries to save his family from the wrath of H.I.V.E. and the murderous Jackal.",
+      "popularity": 1383.538,
+      "poster_path": "/vFIHbiy55smzi50RmF8LQjmpGcx.jpg",
+      "release_date": "2020-08-04",
+      "title": "Deathstroke: Knights & Dragons - The Movie",
+      "video": false,
+      "vote_average": 7,
+      "vote_count": 283
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7h5WAPAcUzOWpp2jrwHBB48790j.jpg",
+      "genre_ids": [
+        16,
+        28
+      ],
+      "id": 843241,
+      "original_language": "ja",
+      "original_title": "劇場版 七つの大罪 光に呪われし者たち",
+      "overview": "With the help of the \"Dragon Sin of Wrath\" Meliodas and the worst rebels in history, the Seven Deadly Sins, the \"Holy War\", in which four races, including Humans, Goddesses, Fairies and Giants fought against the Demons, is finally over. At the cost of the \"Lion Sin of Pride\" Escanor's life, the Demon King was defeated and the world regained peace. After that, each of the Sins take their own path.",
+      "popularity": 1907.487,
+      "poster_path": "/k0ThmZQl5nHe4JefC2bXjqtgYp0.jpg",
+      "release_date": "2021-07-02",
+      "title": "The Seven Deadly Sins: Cursed by Light",
+      "video": false,
+      "vote_average": 8.4,
+      "vote_count": 180
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/q4h2ZbhHKhnWvrrqzcjT778zlbn.jpg",
+      "genre_ids": [
+        16,
+        878,
+        14,
+        28
+      ],
+      "id": 831405,
+      "original_language": "en",
+      "original_title": "Injustice",
+      "overview": "When Lois Lane is killed, an unhinged Superman decides to take control of the Earth. Determined to stop him, Batman creates a team of freedom-fighting heroes. But when superheroes go to war, can the world survive?",
+      "popularity": 1282.961,
+      "poster_path": "/lNRdCfVcjLs2LhO1Vb5rgnHV4JW.jpg",
+      "release_date": "2021-10-09",
+      "title": "Injustice",
+      "video": false,
+      "vote_average": 8.1,
+      "vote_count": 237
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/4KpNHvQIjyg1YFovRAoUXoFrGnR.jpg",
+      "genre_ids": [
+        16,
+        12
+      ],
+      "id": 662708,
+      "original_language": "ja",
+      "original_title": "劇場版ポケットモンスター ココ",
+      "overview": "In the Forest of Okoya, Koko is a feral child who has been raised as a Pokémon by the Mythical Pokémon Zarude. Koko has grown up never doubting that he is a Pokémon even though he can't really use any sort of moves. Ash Ketchum and Pikachu meet Koko and help him protect the Great Tree from the crooked scientist Dr. Zed.",
+      "popularity": 1299.496,
+      "poster_path": "/vGcHyV9s1N2I7bJLSBODvqHTYLL.jpg",
+      "release_date": "2020-12-25",
+      "title": "Pokémon the Movie: Secrets of the Jungle",
+      "video": false,
+      "vote_average": 7.4,
+      "vote_count": 49
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qD45xHA35HdJDGOaA1AgDwiWEgO.jpg",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "id": 744275,
+      "original_language": "en",
+      "original_title": "After We Fell",
+      "overview": "Just as Tessa's life begins to become unglued, nothing is what she thought it would be. Not her friends nor her family. The only person that she should be able to rely on is Hardin, who is furious when he discovers the massive secret that she's been keeping. Before Tessa makes the biggest decision of her life, everything changes because of revelations about her family.",
+      "popularity": 1274.877,
+      "poster_path": "/3WfvjNWr5k1Zzww81b3GWc8KQhb.jpg",
+      "release_date": "2021-09-01",
+      "title": "After We Fell",
+      "video": false,
+      "vote_average": 7.9,
+      "vote_count": 404
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dIibeeq4QMay5bTJ2vjr72IFFRo.jpg",
+      "genre_ids": [
+        14,
+        12,
+        35
+      ],
+      "id": 589754,
+      "original_language": "ru",
+      "original_title": "Последний богатырь: Корень зла",
+      "overview": "Peace and tranquility have set in Belogorie. The evil was defeated and Ivan is now enjoying his well-deserved fame. He is surrounded by his family, friends and small wonders from the modern world that help him lead a comfortable life. Luckily, he has his Magic Sword to cut a gap between the worlds to get some supplies quite regularly. But when an ancient evil rises and the existence of the magic world is put to danger, Ivan has to team up with his old friends and his new rivals. They will set out on a long journey beyond the known world to find a way to defeat the enemies and to return peace to Belogorie.",
+      "popularity": 1106.361,
+      "poster_path": "/5VJSIAhSn4qUsg5nOj4MhQhF5wQ.jpg",
+      "release_date": "2021-01-01",
+      "title": "The Last Warrior: Root of Evil",
+      "video": false,
+      "vote_average": 7.3,
+      "vote_count": 57
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/dNQTwFmEj1b5SktT8oWGH5Cunlx.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "id": 566525,
+      "original_language": "en",
+      "original_title": "Shang-Chi and the Legend of the Ten Rings",
+      "overview": "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+      "popularity": 1034.648,
+      "poster_path": "/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg",
+      "release_date": "2021-09-01",
+      "title": "Shang-Chi and the Legend of the Ten Rings",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 1309
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vkIJ2QgcKMJRvi6pBW4Tr2kgLdy.jpg",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "id": 637534,
+      "original_language": "fr",
+      "original_title": "BAC Nord",
+      "overview": "A police brigade working in the dangerous northern neighborhoods of Marseille, where the level of crime is higher than anywhere else in France.",
+      "popularity": 880.208,
+      "poster_path": "/nLanxl7Xhfbd5s8FxPy8jWZw4rv.jpg",
+      "release_date": "2021-08-18",
+      "title": "The Stronghold",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 445
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jlGmlFOcfo8n5tURmhC7YVd4Iyy.jpg",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "id": 436969,
+      "original_language": "en",
+      "original_title": "The Suicide Squad",
+      "overview": "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
+      "popularity": 1014.343,
+      "poster_path": "/kb4s0ML0iVZlG6wAKbbs9NAm6X.jpg",
+      "release_date": "2021-07-28",
+      "title": "The Suicide Squad",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 4473
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/umAoDwLZMBrYeCDfbJYFRMuXWAr.jpg",
+      "genre_ids": [
+        878
+      ],
+      "id": 681887,
+      "original_language": "en",
+      "original_title": "Cosmic Sin",
+      "overview": "In the year 2524, four centuries after humans started colonizing the outer planets, retired General James Ford gets called back into service when a hostile alien fleet attacks soldiers on a remote planet. The threat against mankind soon escalates into an interstellar war as Ford and a team of elite soldiers try to stop the imminent attack before it's too late.",
+      "popularity": 920.242,
+      "poster_path": "/6Wm7P6y22UZA40QuPYHyWyJ6leI.jpg",
+      "release_date": "2021-03-12",
+      "title": "Cosmic Sin",
+      "video": false,
+      "vote_average": 4.5,
+      "vote_count": 345
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sjeEHzxdDrtMTHQwARi4UJ4NXN7.jpg",
+      "genre_ids": [
+        878,
+        53,
+        9648
+      ],
+      "id": 675319,
+      "original_language": "en",
+      "original_title": "Zone 414",
+      "overview": "In the near future on a colony of state-of-the-art robots, a private investigator is hired by the colony's creator to bring his missing daughter home.",
+      "popularity": 1345.663,
+      "poster_path": "/wIm5S6Blkb0qDMTGVu80VWSrQV1.jpg",
+      "release_date": "2021-09-03",
+      "title": "Zone 414",
+      "video": false,
+      "vote_average": 6,
+      "vote_count": 62
+    }
+  ],
+  "total_pages": 500,
+  "total_results": 10000
+}

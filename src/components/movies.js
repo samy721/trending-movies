@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react'
-// import { movies } from './getmovies'
+
 
 export default class Movies extends Component {
     constructor() {
@@ -10,26 +10,28 @@ export default class Movies extends Component {
             pagenumber: [1],
             currentpage: 1,
             movies: [],
-            watchlist:[]
+            favouritelist: [],
+            currenttext:''
         }
     }
+
     async componentDidMount() {
-        const apiresult = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=bdd243ea847239dc0799805e63e189f0&language=en-US&page=${this.state.currentpage}`);
-        const moviesdata = apiresult.data;
-        // console.log(data);
+        const apiresult = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=bdd243ea847239dc0799805e63e189f0&language=en-US&page=${this.state.currentpage}`);
+        const data = apiresult.data;
         this.setState({
-            movies: [...moviesdata.results]
+            movies: [...data.results]
         })
     }
+
     pagechange = async () => {
-        console.log("page change karo");
         console.log(this.state.currentpage);
-        const apiresult = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=bdd243ea847239dc0799805e63e189f0&language=en-US&page=${this.state.currentpage}`);
-        const moviesdata = apiresult.data;
+        const apiresult = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=bdd243ea847239dc0799805e63e189f0&language=en-US&page=${this.state.currentpage}`);
+        const data = apiresult.data;
         this.setState({
-            movies: [...moviesdata.results]
+            movies: [...data.results]
         })
     }
+
     nextpage = async () => {
         let temparray = []
         for (let i = 1; i <= this.state.pagenumber.length + 1; i++) {
@@ -40,6 +42,7 @@ export default class Movies extends Component {
             currentpage: this.state.currentpage + 1
         }, this.pagechange)
     }
+
     previouspage = async () => {
         if (this.state.currentpage !== 1) {
             this.setState({
@@ -47,53 +50,59 @@ export default class Movies extends Component {
             }, this.pagechange)
         }
     }
+
     activepage = (value) => {
-        if(value!==this.state.currentpage){
+        if (value !== this.state.currentpage) {
             this.setState({
-                currentpage:value
+                currentpage: value
             }, this.pagechange)
         }
-
     }
-    addtowacthlist = (favmovie) => {
-let oldData = JSON.parse(localStorage.getItem('added-movies') || '[]');
-if(this.state.watchlist.includes(favmovie.id)){
-oldData = oldData.filter((m)=> m.id != favmovie.id )
-}else{
-    oldData.push(favmovie)
-}
-localStorage.setItem('added-movies', JSON.stringify(oldData));
-console.log(oldData);
-this.checkwatchlist();
-}
-checkwatchlist =() =>{
-    let oldData = JSON.parse(localStorage.getItem('added-movies') || '[]');
-    let arrayTemp = oldData.map((mymovies)=>mymovies.id)
-    this.setState({
-        watchlist: [...arrayTemp]
-    })
-}
-    render() {
-        // let movie = movies.results
+
+    addtofavlist = (favmovie) => {
+        let oldData = JSON.parse(localStorage.getItem('addedmov') || '[]');
+        if (this.state.favouritelist.includes(favmovie.id)) {
+            oldData = oldData.filter((m) => m.id !== favmovie.id)
+        } else {
+            oldData.push(favmovie)
+        }
+        localStorage.setItem('addedmov', JSON.stringify(oldData));
+        this.checkfavouritelist();
+    }
+
+    checkfavouritelist = () => {
+        let oldData = JSON.parse(localStorage.getItem('addedmov') || '[]');
+        let arrayTemp = oldData.map((mymovies) => mymovies.id)
+        this.setState({
+            favouritelist: [...arrayTemp]
+        })
+    }
+    
+    render(){
+        let { currenttext, movies} = this.state;
+        let filtermovies = movies.filter(item =>{
+            return  item.original_title.toLowerCase().includes(currenttext.toLowerCase())
+        });
+
         return (
             <>
                 {
-                    this.state.movies.length === 0 ?
-                        <div className="spinner-border text-primary" role="status">
-                            <span className="visually-hidden">Loading...</span>
-                        </div> :
                         <div className="container">
-                            <h2 class='section-title'>Latest Released Movies</h2>
+                            <h1 class='text-danger m-2 text-center'>Trending Movies</h1>
+                            <div>                           
+                                <form class="d-flex">
+                                    <input class="form-control search-box" type="search" placeholder="Search Movies" aria-label="Search" value={this.state.currenttext} onChange={(e) => this.setState({ currenttext:e.target.value})} />
+                                </form>
+                            </div>
                             <div class='movie-list'>
                                 {
-                                    this.state.movies.map((moviesobject) => (
-                                        <div class="card movie-card text-white m-2" onMouseEnter={() => this.setState({ hover: moviesobject.id })} >
+                                    filtermovies.map((moviesobject) => (
+                                        <div class="card movie-card text-white m-2"  >
                                             <img className="banner-img img-fluid" src={`https://image.tmdb.org/t/p/original${moviesobject.backdrop_path}`} alt="" />
                                             <div class='card-img-overlay card-texts'>
-                                                <h6 className="card-title banner-title">{moviesobject.original_title || moviesobject.name}</h6>
+                                                <h2 className="card-title">{moviesobject.original_title}</h2>
                                                 <div>{
-                                                    this.state.hover === moviesobject.id &&
-                                                    <a class="btn btn-primary m-1" onClick={()=>this.addtowacthlist(moviesobject)} >{this.state.watchlist.includes(moviesobject.id) ? 'Remove from Watch List' : 'Add to Watch List'}</a>
+                                                    <a class="btn btn-primary m-1" onClick={() => this.addtofavlist(moviesobject)} >{this.state.favouritelist.includes(moviesobject.id) ? 'Remove from Favourite List' : 'Add to Favourite List'}</a>
                                                 }
                                                 </div>
                                             </div>

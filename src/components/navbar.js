@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom'
 export default class Navbar extends Component {
     render() {
         return (
-            <div className='container site-title'>
-                <Link to='/trending-movies' style={{textDecoration:'none', marginRight:'20px'}} ><h1>Trending Movies </h1></Link>
-                <Link to='/watchlist' style={{textDecoration:'none'}} ><h1> Watch List  ❤ </h1></Link>
+            <div className='container-fluid nav-title'>
+                <img width='70px' src="https://play-lh.googleusercontent.com/ZKxqgazA73cF7wdXn1KFZaEGFPLCSm2VvmHTFPtuobIWsk6d9Jvuxr68CGrDLDykBfLN=rw-w250" alt="logo" />
+                <Link to='/trending-movies' style={{textDecoration:'none'}} ><h1> TrendingMovies.com </h1></Link>
+                <Link to='/favouritelist' style={{textDecoration:'none'}} ><h4 style={{color:'red'}}>❤</h4><span>Fav</span></Link>
             </div>
         )
     }
