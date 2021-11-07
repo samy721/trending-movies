@@ -32,4 +32,14 @@ code {
   grid-template-columns: auto;
   font-size: 22px;
 }
+h2{
+  font-size: 20px;
+}
+
+.banner-title p {
+	margin-top: 0;
+	margin-bottom: -2rem;
+}
+
+
 }
